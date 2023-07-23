@@ -42,6 +42,10 @@ namespace PracticeProblems
                         reverse.PrintReverseEachWord();
                         break;
                     case 8:
+                        SumOfDigits sumOfDigits = new SumOfDigits();    
+                        sumOfDigits.FindSumOfDigits();
+                        break;
+                    case 9:
                         flag = false;
                         break;
 
