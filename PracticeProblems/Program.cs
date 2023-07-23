@@ -7,7 +7,7 @@ namespace PracticeProblems
         {
             bool flag= true;
             Console.WriteLine("Practice Problems:");
-            Console.WriteLine("Choose your option:\n 1.Number of Duplicates\n 2.Unique elements\n 3.Exit");
+            Console.WriteLine("Choose your option:\n 1.Number of Duplicates\n 2.Unique elements\n 3.Frequency\n4.Exit");
             while(flag)
             {
                 int choice = Convert.ToInt32(Console.ReadLine());
@@ -22,6 +22,10 @@ namespace PracticeProblems
                         unique.PrintUniqueElements();
                         break;
                     case 3:
+                        Frequency frequency = new Frequency();  
+                        frequency.CountFrequency();
+                        break;
+                    case 4:
                         flag = false;
                         break;
 
