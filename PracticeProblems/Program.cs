@@ -7,7 +7,7 @@ namespace PracticeProblems
         {
             bool flag= true;
             Console.WriteLine("Practice Problems:");
-            Console.WriteLine("Choose your option:\n 1.Number of Duplicates\n 2.Unique elements\n 3.Frequency\n 4.MinMaxElements\n 5.Print Pattern\n 6.Print Pattern-2\n 7.Reverseord\n 8.Exit");
+            Console.WriteLine("Choose your option:\n 1.Number of Duplicates\n 2.Unique elements\n 3.Frequency\n 4.MinMaxElements\n 5.Print Pattern\n 6.Print Pattern-2\n 7.Reverseord\n 8.Sum Of Digits\n9.Convert to Capital\n`0.Exit");
             while(flag)
             {
                 int choice = Convert.ToInt32(Console.ReadLine());
@@ -46,6 +46,10 @@ namespace PracticeProblems
                         sumOfDigits.FindSumOfDigits();
                         break;
                     case 9:
+                        ToCapital toCapital = new ToCapital();
+                        toCapital.ConvertLetterAsCapital();
+                        break;
+                    case 10:
                         flag = false;
                         break;
 
