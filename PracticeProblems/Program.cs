@@ -7,7 +7,7 @@ namespace PracticeProblems
         {
             bool flag= true;
             Console.WriteLine("Practice Problems:");
-            Console.WriteLine("Choose your option:\n 1.Number of Duplicates\n 2.Unique elements\n 3.Frequency\n4.Exit");
+            Console.WriteLine("Choose your option:\n 1.Number of Duplicates\n 2.Unique elements\n 3.Frequency\n 4.MinMaxElements\n 5.Exit");
             while(flag)
             {
                 int choice = Convert.ToInt32(Console.ReadLine());
@@ -26,6 +26,10 @@ namespace PracticeProblems
                         frequency.CountFrequency();
                         break;
                     case 4:
+                        MinMaxElements minMaxElements = new MinMaxElements();   
+                        minMaxElements.FindMaxMinElement();
+                        break;
+                    case 5:
                         flag = false;
                         break;
 
